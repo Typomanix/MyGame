@@ -21,7 +21,9 @@ if(username.equals("admin") && password.equals("@dmin@12#")){
 else{
 	%>
 	
-	<script>window.alert(Please write a valid Username or password);</script>
+	<script>
+	window.alert("Please write a valid Username or password");
+	</script>
 <% 
 	response.sendRedirect("../html/admin.html");
 
