@@ -1,4 +1,4 @@
-"Typomanix"
+                                                                "Typomanix"
 
 If you’re looking to improve your typing skills, then this a great and fun way to do so. This will gamify your learning process, make you better, quicker and sharper at typing.
 
