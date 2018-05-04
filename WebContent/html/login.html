@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>login</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="../css/small-business.css" rel="stylesheet">
+
+  </head>
+
+  <body background="../img/bg1.gif">
+
+    <!-- Navigation -->
+     <div class="container">
+    <center><img class="img-fluid rounded" src="../img/new.png" alt=""></center>
+   
+</div>
+
+    <!-- Page Content -->
+  <br>
+  <div class="box">
+  <div class="container bg-primary col-md-4 offset-4">
+        <div class="login-form ">
+           <center><img src="../img/login.png" width="300" ></center>
+        
+        <form  method="post" action="../jsp/login.jsp"  name="frm_name" target="_self" onsubmit="return loginvalidate()">
+            <div class="form-group">
+                <label>UserName</label>
+                <input type="text" name="id" id="iuid" class="form-control" >
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="upassword" id="ipassword" class="form-control" >
+            </div>
+
+            <div class="form-group">
+                
+                <input type="checkbox" > Remember me
+            </div>
+           <button type="submit" class="btn btn-success btn-block" id="isubmit" name="nsubmit">Log in</button>
+           <br>
+            <center> <button class="btn btn-warning btn-block" href="signup.html">New user</button></center>
+            <br>
+         </form>
+       
+        </div>
+       
+    </div>
+</div>
+  <br>
+    <!-- Footer -->
+    <footer class="py-2 bg-dark fixed-bottom">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy;  Typomanix 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/loginValidate.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE-Edge">
+
+    <!--Bootstrap core CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>BootStrap 4 Home Page</title>
+</head>
+<body>
+    <!--Content of the page-->
+    
+    <!--Bootstrap core JavaScript-->
+    <!--Placed at the end of the page so that the pages load faster-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+                                

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2018 2:07:03 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.niit.typomanix">
+    <class name="ScoreBoard" table="SCOREBOARD">
+        <id name="sc_id" column="SC_ID">
+        <generator class="increment"></generator>
+        </id>
+        <property name="Categeory" type="java.lang.String">
+            <column name="CATEGEORY" />
+        </property>
+        <property name="score" type="java.lang.Double">
+            <column name="SCORE" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+       
+    </class>
+</hibernate-mapping>
+

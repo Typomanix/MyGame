@@ -1,0 +1,17 @@
+body{
+
+	padding-top: 30px;
+}
+
+.main-section{
+	padding: 15px;
+	background-color: #f1f1f1;
+}
+
+.custom-file-control::after{
+	content: "choose file ...";
+}
+
+.custom-file-control::before{
+	content: "Browse";
+}

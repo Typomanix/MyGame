@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Typing Game</title>
+
+        <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            #timer {font-size: 40px;text-align: center;}
+            #wordTray {font-size: 40px;text-align: center;}
+             #wpmBox
+            {
+            font-size: 40px;
+           text-align:center;
+            }
+            #player {
+                margin-top: 100px;
+                height: 100px;
+                width: 100px;
+                position: relative;
+                background-image: url("../img/run1.gif");
+                left: 0;
+            }
+            textarea { font-size: 28px; }
+            .button {
+                background: #3498db;
+                background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+                background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+                background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+                background-image: -o-linear-gradient(top, #3498db, #2980b9);
+                background-image: linear-gradient(to bottom, #3498db, #2980b9);
+                font-family: Courier;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+            }
+            .button:hover {
+              background: #3cb0fd;
+              background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+              background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+              background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+              background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+              background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+              text-decoration: none;
+            }
+           
+         </style>
+    </head>
+
+    <body background="../imgs/pic7.jpg">
+        <div class="container-fluid" id="start">
+            <center>
+                <h1 style="margin-bottom: 70px">Typing Game</h1>
+                <button class="button" onClick="startWordRace()">Start Game</button>
+            </center>
+        </div>
+
+        <!-- text box -->
+        <div class="container-fluid" id="wordRace" style="display: none">
+            <div class="row">
+                <p style="text-align: center">
+                <textarea rows="3" cols="70" id="input"></textarea>
+                    
+                </p>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-2" id="wpmBox"></div>
+
+                <div class="col-lg-8 alert alert-danger" id="wordTray"></div>
+
+                <div class="col-lg-2" id="timer"></div>
+            </div>
+
+            <div id="player"></div>
+        </div>
+
+        <div class="container-fluid" id="end" style="display: none">
+            <div class="row">
+                <div class="col-lg-6">
+                    <center>
+                        <h3>Words Per Minute</h3>
+                        <h1 id="wpmStat"></h1>
+                    </center>
+                </div>
+                <div class="col-lg-6">
+                    <center>
+                       <h3>Words Typed</h3>
+                        <h1 id="wordCountStat"></h1>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="../js/fav_nov.js"></script>
+    </body>
+</html>

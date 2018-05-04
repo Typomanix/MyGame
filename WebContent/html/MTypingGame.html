@@ -1,0 +1,79 @@
+<html>
+<head>
+
+	<title>Game</title>
+	<style>
+			body
+			{
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+			background-image: url("../img/bg1.gif");
+			}
+
+			.bubb
+			{
+			position: absolute;
+			width:60px;
+			height:60px;
+			font: bold 10px Times New Roman;
+			background-color: yellow;
+			text-align: center;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			vertical-align: middle;
+			padding: 5px;
+			}
+
+			#score
+			{
+			font-size:46px;
+			top: 25px;
+			right: 50px;
+			display: none;
+			text-align:right;
+			}
+
+			#start
+			{
+			width: 150px;
+			padding: 10px 15px;
+			text-align: center;
+			font:bold 15px arial;
+			background-color: #dedede;
+			color: #000;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			position: absolute;
+			}
+			#start:hover
+			{
+			cursor: pointer;
+			}
+			#score{
+				position: absolute;
+				background-color:black;
+				color:white;
+				float:right;
+				font-size:4em;
+				padding:.3em;
+				border-radius:10%;
+			}
+
+	</style>
+			
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+			<body>
+			<center><img class="img-fluid rounded" src="../img/new.png" alt=""></center>
+		
+
+			<div id="score">0</div>
+			<div id="start">Start Practice</div>
+			<div id="time"></div>
+			<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>	
+			<script type="text/javascript" src="../js/jquery.browser.js"></script>	
+			<script src="../js/gameEngine.js"></script>	
+					
+			</body>
+</html>

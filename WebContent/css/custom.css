@@ -1,0 +1,22 @@
+.col-md-6 {
+	 background-color: 	#FFF0F5;
+	 border: 1px black solid;
+	
+	 }
+.col-md-4 {
+	 background-color: 	#5bc0de;
+	 border: 1px black solid;
+	 }
+.col-md-3 {
+	 background-color: 	#f4c020;
+	 border: 1px black solid;
+	 }
+
+.col-md-9 {
+	 background-color: 	#a6b48c	;
+	 border: 1px black solid;
+	 }
+.container{
+	background-color:transparent;
+	
+}

@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Typing Game Lesson</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+#timer {
+	font-size: 40px;
+	text-align: center;
+}
+
+#wordTray {
+	font-size: 40px;
+	text-align: center;
+}
+
+#wpmBox {
+	font-size: 40px;
+	text-align: center;
+}
+
+#player {
+	bottom: 15px;
+	height: 174px;
+	width: 200px;
+	position: fixed;
+	background-image: url("../imgs/camel.gif");
+	left: 0;
+}
+
+textarea {
+	font-size: 28px;
+}
+
+body, html {
+	height: 100%;
+	margin: 0px;
+}
+
+#a {
+	background-image: url("../imgs/pic2.png");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.button {
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	font-family: Courier;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+}
+.alert{background: #e6b800;	}
+.panel{	background: #ffdb4d;}
+</style>
+</head>
+
+<body>
+	<div id=a>
+		<div class="container-fluid" id="start">
+			<center>
+				<h1 style="margin-bottom: 70px">Typing Game</h1>
+				<button class="button" onClick="startWordRace()">Start Game</button>
+			</center>
+		</div>
+
+		<!-- text box -->
+		<div class="container-fluid" id="wordRace" style="display: none">
+			<div class="row">
+				<p style="text-align: center">
+					<textarea rows="3" cols="80" id="input"></textarea>
+
+				</p>
+			</div>
+
+
+			<div class="row">
+				<div class="col-lg-2 panel panel-body" id="wpmBox"></div>
+
+				<div class="col-lg-8 alert" id="wordTray"></div>
+
+				<div class="col-lg-2 panel panel-body" id="timer"></div>
+			</div>
+
+			<div id="player"></div>
+		</div>
+
+		<div class="container-fluid" id="end" style="display: none">
+			<div class="row">
+				<div class="col-lg-6">
+					<center>
+						<h3>Words Per Minute</h3>
+
+						<h1 id="wpmStat"></h1>
+					</center>
+				</div>
+				<div class="col-lg-6">
+					<center>
+						<h3>Words Typed</h3>
+						<h1 id="wordCountStat"></h1>
+					</center>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="../js/alpha_lessons.js"></script>
+	</div>
+</body>
+</html>
