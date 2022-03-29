@@ -14,6 +14,20 @@
 <title>LOG IN SUCCESS</title>
 </head>
 <body background="../img/bg1.gif">
+<script>
+function fun()
+{
+	var retVal = confirm("Do you want to continue ?");
+    if( retVal == true ){
+    	window.location="../index.html";
+       return true;
+    }
+    else{
+    	window.location="Session.jsp";
+       return false;
+    }
+}
+</script>
 <% 
 session=request.getSession();
 session.setMaxInactiveInterval(3600);
@@ -26,13 +40,13 @@ session.setMaxInactiveInterval(3600);
 			<img class="img-fluid rounded" src="../img/new.png" alt="">
 		</center>
 		<div class="col-md-12">
-			<a href="index.html"> <img class="img-fluid rounded"
-				src="../img/1menu.png" alt="" width="200"></a> <a
-				href="html/about.html"><img class="img-fluid rounded"
+			 <img class="img-fluid rounded" onclick="fun()"
+				src="../img/1menu.png" alt="" width="200"> <a
+				href="#"><img class="img-fluid rounded"
 				src="../img/2menu.png" alt="" width="200"></a> <a
-				href="html/MTypingGame.html"><img class="img-fluid rounded"
+				href="../html/MTypingGame.html"><img class="img-fluid rounded"
 				src="../img/menu6.png" alt="" width="200"></a> <a
-				href="html/instructions.html"> <img class="img-fluid rounded"
+				href="#"> <img class="img-fluid rounded"
 				src="../img/4menu.png" alt="" width="200"></a>
 			<br>			
 	<ul class="nav navbar-nav navbar-right panel panel-warning">

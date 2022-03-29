@@ -13,11 +13,11 @@
            text-align:center;
             }
             #player {
-                margin-top: 100px;
-                height: 200px;
-                width: 150px;
-                position: relative;
-                background-image: url("../img/run2.gif");
+                bottom:10px;
+                height: 182px;
+                width: 107px;
+                position: fixed;
+                background-image: url("../img/jelly.gif");
                 left: 0;
             }
             #wpmBox
@@ -49,14 +49,26 @@
               background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
               text-decoration: none;
             }
-            body 
-            {
-            size:110%;
-            }
+         body, html {
+	height: 100%;
+	margin: 0px;
+}
+.panel
+{
+background:#97908C;
+}
+
+#a {
+	background-image: url("../imgs/pic6.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
          </style>
     </head>
 
-    <body background="../imgs/pic6.jpg">
+    <body>
+    <div id="a">
         <div class="container-fluid" id="start">
             <center>
                 <h1 style="margin-bottom: 70px">Typing Game</h1>
@@ -75,11 +87,11 @@
 
 
             <div class="row">
-                <div class="col-lg-2 panel panel-default" id="wpmBox"></div>
+                <div class="col-lg-2 panel panel-body" id="wpmBox"></div>
 
-                <div class="col-lg-8 alert alert-danger" id="wordTray"></div>
+                <div class="col-lg-8 alert-info" id="wordTray"></div>
 
-                <div class="col-lg-2 panel panel-default" id="timer"></div>
+                <div class="col-lg-2 panel panel-body" id="timer"></div>
             </div>
 
             <div id="player" class=""></div>
@@ -102,7 +114,7 @@
             </div>
 
         </div>
-
+</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="../js/vocab.js"></script>
     </body>

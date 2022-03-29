@@ -94,7 +94,7 @@ function startWordRace() {
                 newLeft = "30px";
             else {
                 left = left.replace("px", "");
-                newLeft = (parseInt(left, 10) + 30) + "px";
+                newLeft = (parseInt(left, 10) + 80) + "px";
             }
 
             // Move the player div

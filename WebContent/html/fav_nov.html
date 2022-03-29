@@ -13,12 +13,13 @@
            text-align:center;
             }
             #player {
-                margin-top: 100px;
-                height: 100px;
-                width: 100px;
-                position: relative;
-                background-image: url("../img/run1.gif");
-                left: 0;
+                bottom:70px;
+                height: 79px;
+                width: 300px;
+                position: fixed;
+                background-image: url("../img/snake.gif");
+                left:0;
+              
             }
             textarea { font-size: 28px; }
             .button {
@@ -43,11 +44,30 @@
               background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
               text-decoration: none;
             }
+            body, html {
+	height: 100%;
+	margin: 0px;
+}
+.panel
+{
+background:#73C6B6;
+}
+
+.alert
+{background:#A9DFBF;}
+
+#a {
+	background-image: url("../imgs/pic7.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
            
          </style>
     </head>
 
-    <body background="../imgs/pic7.jpg">
+    <body>
+    <div id="a">
         <div class="container-fluid" id="start">
             <center>
                 <h1 style="margin-bottom: 70px">Typing Game</h1>
@@ -66,11 +86,11 @@
 
 
             <div class="row">
-                <div class="col-lg-2" id="wpmBox"></div>
+                <div class="col-lg-2 panel panel-body" id="wpmBox"></div>
 
-                <div class="col-lg-8 alert alert-danger" id="wordTray"></div>
+                <div class="col-lg-8 alert" id="wordTray"></div>
 
-                <div class="col-lg-2" id="timer"></div>
+                <div class="col-lg-2 panel panel-body" id="timer"></div>
             </div>
 
             <div id="player"></div>
@@ -93,7 +113,7 @@
             </div>
 
         </div>
-
+</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="../js/fav_nov.js"></script>
     </body>
